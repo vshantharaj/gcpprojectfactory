@@ -1,2 +1,3 @@
+<<<<<<< HEAD
 # gcpprojectfactory - temp copy to learn gcp deploymenet manager... 
-#test
+>>>>>>> d27ff52452baa287258fce07232965c68dfa8099
