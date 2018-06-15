@@ -5,14 +5,14 @@ resources:
   # The "name" property below will be the ID of the new project
   # If you want your project to have a different name, use the "project-name"
   # property.
-  - name: DM_TEST_PROJECT
+  - name: vikram0123-453-1234-a2
     type: project.py
     properties:
         # Change this to your organization ID.
-        organization-id: "ORG_ID"
+        organization-id: "58633015342"
 
         # Change the following to your organization's billing account
-        billing-account-name: billingAccounts/BILLING_ACCOUNT_ID
+        billing-account-name: billingAccounts/0134E4-14A078-F68F6D
 
         # The apis to enable in the new project.
         # To see the possible APIs, use: gcloud services list --available
@@ -52,7 +52,7 @@ resources:
                 members:
                   # NOTE: The DM service account that is creating this project will
                   # automatically be added as an owner.
-                  - serviceAccount:98765432100@cloudservices.gserviceaccount.com
+                  - serviceAccount:168853705305@cloudservices.gserviceaccount.com
               - role: roles/viewer
                 members:
                   - user:iamtester@deployment-manager.net
@@ -64,5 +64,5 @@ resources:
                 members:
                   # This is already not on the project, but in case it shows up, let's
                   # remove it.
-                  - serviceAccount:1234567890@cloudservices.gserviceaccount.com
+                  - serviceAccount:168853705305@cloudservices.gserviceaccount.com
 

@@ -48,6 +48,9 @@ def GenerateConfig(context):
       'properties': {
           'name': project_name,
           'projectId': project_id,
+          'labels': {
+                context.properties['mykey']: context.properties['myval'],
+          },
           'parent': {
               'type': parent_type,
               'id': parent_id
@@ -191,7 +194,7 @@ def GenerateConfig(context):
      })
   if context.properties.get('shared_vpc_service_of'):
       resources.append({
-        'name': project_id + '-xpn-service-' +
+        'name': project_id +
             context.properties['shared_vpc_service_of'],
         'type': 'compute.beta.xpnResource',
         'properties': {
@@ -206,8 +209,8 @@ def GenerateConfig(context):
         'metadata': {
             'dependsOn': [
                 ApiResourceName(project_id, 'compute.googleapis.com'),
-                project_id,
-                context.properties['shared_vpc_service_of'] + '-xpn-host',
+                project_id
+              #  context.properties['shared_vpc_service_of'],
             ],
         }
       })

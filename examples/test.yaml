@@ -1,6 +1,3 @@
-imports:
-- path: project.py
-
 resources:
 # CHANGEME: Name of the host project for the Shared VPC
 # - name: HOST_PROJECT
@@ -38,8 +35,8 @@ resources:
 #         - user:EMAIL
 #     shared_vpc_host: true
 # CHANGEME: Name of the service project for the Shared VPC
-- name: working5304939ieyao
-  type: project.py
+- name: apibasedproj445523
+  type: project-creation-demo-206504/composite:myprojecttype2
   properties:
     # CHANGEME: Change this to your organization ID.
     organization-id: "58633015342"
@@ -48,6 +45,8 @@ resources:
     billing-account-name: billingAccounts/0134E4-14A078-F68F6D
     # The apis to enable in the new project.
     # To see the possible APIs, use gcloud CLI: gcloud services list --available
+    mykey: ssrid
+    myval: "4032"
     apis:
     - compute.googleapis.com
     - deploymentmanager.googleapis.com

@@ -45,6 +45,14 @@ properties:
       base-10 string representation of integer.
     type: string
     pattern: ^[0-9]{8,25}$
+  mykey:
+    description: >
+      key
+    type: string
+  myval:
+    description: >
+      value
+    type: string    
   billing-account-name:
     description: >
       The ID of the billing account to attach to the projects.
